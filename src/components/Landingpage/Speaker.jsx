@@ -11,7 +11,9 @@ var slideIndex = 1;
 export default class SpeakerIndex extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      background: 0
+    };
   }
   componentDidMount = () => {
     this.showSlides(slideIndex);
@@ -35,19 +37,15 @@ export default class SpeakerIndex extends Component {
     var currentSpeakerName = document.getElementsByClassName(
       "landing-speaker-parent-header-content-speakers-h1"
     );
-    console.log(n, "n");
-    console.log(slideIndex, "slideindex");
     if (slideIndex > slides.length) {
       slideIndex = 1;
     }
-    // console.log(slideIndex);
     if (slideIndex < 1) {
       slideIndex = slides.length;
     }
-
-    console.log(n, "n");
-    console.log(slideIndex, "slideindex");
-    console.log(slides.length, "slides.length");
+    this.setState({
+      background: slideIndex
+    });
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
@@ -69,9 +67,15 @@ export default class SpeakerIndex extends Component {
     currentSpeakerName[slideIndex - 1].className += " active-text";
   };
   render() {
+    console.log(this.state.background);
     return (
       <div className="landing-speaker-parent">
-        <div className="landing-speaker-parent-background"></div>
+        <div
+          className="landing-speaker-parent-background"
+          style={{
+            backgroundImage: `url(${speakers[5].img})`
+          }}
+        ></div>
         <div className="landing-speaker-parent-header">
           <div className="landing-speaker-parent-heading">
             <Heading text="SPEAKERS" />
@@ -87,7 +91,9 @@ export default class SpeakerIndex extends Component {
                 >
                   <div
                     className="landing-speaker-parent-header-content-speakers"
-                    style={{ backgroundImage: `url(${Image})` }}
+                    style={{
+                      backgroundImage: `url(${item.img})`
+                    }}
                   ></div>
                   <h1 className="landing-speaker-parent-header-content-speakers-h1">
                     {item.firstName + " " + item.lastName}
@@ -111,13 +117,16 @@ export default class SpeakerIndex extends Component {
               return (
                 <div key={item.id} className="slide fade">
                   <div className="slide-wrapper">
-                    <div className="slide-image"></div>
+                    <div
+                      className="slide-image"
+                      style={{
+                        backgroundImage: `url(${item.img})`
+                      }}
+                    ></div>
                     <div className="slide-text">
-                      <div>
-                        <h1 style={{ color: "white" }}>
-                          {item.firstName}&nbsp;
-                        </h1>
-                        <h1>{item.lastName}</h1>
+                      <div className="slide-text-heading">
+                        <span>{item.firstName}&nbsp;</span>
+                        <span style={{ color: "white" }}>{item.lastName}</span>
                       </div>
                       <h3>{item.designation}</h3>
                       <p>{item.about}</p>
