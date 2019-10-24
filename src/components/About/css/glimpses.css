@@ -43,11 +43,58 @@
 
 .masonry-brick {
 	flex: auto;
-	height: 250px;
-	min-width: 150px;
 	margin: 0.5%;
 }
 
+
+.brick1 {
+	background-image: url("../images/glimpses/22384386_1493549057388804_6752366855988785359_o.jpg");
+	background-position: right;
+	width: 30%;
+	height: 400px;
+}
+
+.brick2 {
+	background-image: url("../images/glimpses/22426275_1493594434050933_9142120609479997904_o.jpg");
+	background-position: right;
+	width: 60%;
+	height: 400px;
+}
+
+.brick3 {
+	background-image: url("../images/glimpses/22426474_1493593430717700_1887552193352389921_o.jpg");
+	background-position: right;
+	width: 60%;
+	height: 400px;
+}
+
+.brick4 {
+	background-image: url("../images/glimpses/22459134_1493442194066157_461425880426519352_o.jpg");
+	background-position: right;
+	width: 35%;
+	height: 400px;
+}
+
+.brick5 {
+	background-image: url("../images/glimpses/22496089_1496629017080808_6078416390384859714_o.jpg");
+	background-position: center;
+	width: 100%;
+	height: 400px;
+}
+
+.brick6 {
+	background-image: url("../images/glimpses/22467758_1493423957401314_50417512967397042_o.jpg");
+	background-position: right;
+	width: 35%;
+	height: 400px;
+}
+
+.brick7 {
+	background-image: url("../images/glimpses/22538665_1493548350722208_8666794573202207571_o.jpg");
+	background-position: center;
+	width: 60%;
+	height: 400px;
+}
 /*.masonry-brick:nth-child(4n+1) {
   height: 350px;
 }

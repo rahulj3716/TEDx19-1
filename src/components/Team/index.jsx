@@ -25,12 +25,23 @@ export default class TeamIndex extends Component {
                             <Heading text="TEAM"/>
                         </div> */}
                     <ul className="member-list">
-                        <Member className="member-list-child"/>
-                        <Member className="member-list-child"/>
-                        <Member className="member-list-child"/>
-                        <Member className="member-list-child"/>
-                        <Member className="member-list-child"/>
-                        <Member className="member-list-child"/>
+                        <Member className="member-list-child" name="AMRITHA" position="Curator"/>
+                        <Member className="member-list-child" name="KESHVAM" position="Co-Curator"/>
+                        <Member className="member-list-child" name="DHRUV KALSOTRA" position="Head of Sponshorship"/>
+                        <Member className="member-list-child" name="RAGHUVANSH RAWAT" position="Head of Operationa"/>
+                        <Member className="member-list-child" name="AKASH RAJ" position="Head of PR and Marketing"/>
+                        <Member className="member-list-child" name="SUDHIR BALAKRISHNAN" position="Senior Manager"/>
+                        <Member className="member-list-child" name="SAI VARUN MULA" position="Executive Admin-Relations"/>
+                        <Member className="member-list-child" name="UTKARSH MATHUR" position="Manager"/>
+                        <Member className="member-list-child" name="PARTH SINGH PARIHAR" position="Manager"/>
+                        <Member className="member-list-child" name="ROCHISHA AGARWAL" position="Manager"/>
+                        <Member className="member-list-child" name="NALIN PRABATH" position="Manager"/>
+                        <Member className="member-list-child" name="KSHTIJ SRIKANT" position="Manager"/>
+                        <Member className="member-list-child" name="AGASTYA VARAHALA" position="Manager"/>
+                        <Member className="member-list-child" name="SEJAL GUPTA" position="Manager"/>
+                        <Member className="member-list-child" name="MOHIT SHARMA" position="Manager"/>
+                        <Member className="member-list-child" name="ANURAG GUPTA" position="Manager"/>
+                        <Member className="member-list-child" name="RATHOD KIRTHI" position="Manager"/>
                     </ul>
                 </div>
             </div>
