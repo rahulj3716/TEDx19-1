@@ -17,8 +17,8 @@ export default class Member extends Component {
     					<div className="red-border"><div className="member-image"></div></div>
     				</div>
     				<div className="member-info">
-    					<h3 className="member-info-name">KESHWAM VERMA</h3>
-    					<p className="member-info-position">Conviener</p>
+    					<h3 className="member-info-name">{this.props.name}</h3>
+    					<p className="member-info-position">{this.props.position}</p>
     					<p className="member-info-quote"><span>&#8220;</span>Time isn't the main thing, its the only thing<span>&#8221;</span></p>   
     				</div>
     			</div>
