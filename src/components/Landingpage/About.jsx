@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"
+
 import './src/css/about.css'
 export default class AboutusIndex extends Component {
     constructor(props) {
@@ -19,9 +21,9 @@ export default class AboutusIndex extends Component {
                         5th Nov'19 &nbsp; &nbsp;  ●  &nbsp; &nbsp; MAC Audi
                     </div>
 
-                    <button className="landing-about-button">REGISTER</button>
+                    {/* <button className="landing-about-button">REGISTER</button> */}
 
-                  
+                    <button className="landing-about-button">REGISTER</button>
                 </div>
             </div>
 

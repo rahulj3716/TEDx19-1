@@ -2,7 +2,7 @@
   "name": "tedx",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://prakhar2109.github.io/TEDx19",
+  "homepage": "https://prakhar2109.github.io/TEDx19/",
   "dependencies": {
     "antd": "^3.24.0",
     "gh-pages": "^2.1.1",
@@ -14,7 +14,9 @@
     "react-scripts": "0.9.5",
     "react-slidez": "0.0.31"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-import": "^1.12.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
