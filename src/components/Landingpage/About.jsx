@@ -7,7 +7,7 @@ export default class AboutusIndex extends Component {
         super(props);
         this.state = {}
     }
-
+ 
     render() {
         return (
             <div>
@@ -21,9 +21,9 @@ export default class AboutusIndex extends Component {
                         5th Nov'19 &nbsp; &nbsp;  ●  &nbsp; &nbsp; MAC Audi
                     </div>
 
-                    {/* <button className="landing-about-button">REGISTER</button> */}
+                    {/* <button className="landing-about-button">REGISTER</but-ton> */}
 
-                    <button className="landing-about-button">REGISTER</button>
+                    <a href='https://www.townscript.com/e/tedx-423211' target="_blank"><button className="landing-about-button">REGISTER</button></a>
                 </div>
             </div>
 
