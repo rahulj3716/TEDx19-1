@@ -2,7 +2,7 @@
   "name": "tedx",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tushar19varshney.github.io/TEDx19/",
+  "homepage": "https://tedxiitroorkee.in",
   "dependencies": {
     "antd": "^3.24.0",
     "gh-pages": "^2.1.1",
