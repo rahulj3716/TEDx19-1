@@ -1,7 +1,7 @@
 import Image1 from "./src/images/JosephRadhik.jpg";
 import Image2 from "./src/images/ManishBehl.jpeg";
 import Image3 from "./src/images/PrashantDhawan.jpg";
-// import Image4 from "./src/images/AlexMathew.jpg";
+import Image4 from "./src/images/AlexMathew.jpeg";
 import Image from "./src/images/download.jpg";
 
 export const speakers = [
@@ -36,7 +36,7 @@ export const speakers = [
     id: 4,
     firstName: "alex",
     lastName: "mathew",
-    img: Image1,
+    img: Image4,
     designation: "( Drag queen )",
     about:
       "Alex Mathew is one of the leading drag performers in our country. He has performed in shows across India since 2011. He has also given talks about spreading awareness on how drag is an art. His character Maya is a leading icon in the LGBTQ community across India.  "

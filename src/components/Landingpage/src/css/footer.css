@@ -53,7 +53,9 @@
 	justify-content: center;
 	align-items: stretch;
 }
-
+.footer-links a{
+	color: red;
+}
 .footer-links li {
 	list-style-type: none;
 	width: 50%;

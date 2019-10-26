@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./src/css/footer.css";
 export default class FooterIndex extends Component {
   constructor(props) {
@@ -37,13 +37,13 @@ export default class FooterIndex extends Component {
           </div>
           <div className="landing-footer-childr">
             <ul className="footer-links">
-              <li>REGISTER</li>
+              <li><a href='https://www.townscript.com/e/tedx-423211' target="_blank">REGISTER</a></li>
               <li>PARTNER</li>
-              <li>THEME</li>
-              <li>ABOUT</li>
-              <li>SPEAKERS</li>
+              <li><Link to="/">THEME</Link></li>
+              <li><Link to="/about">ABOUT</Link></li>
+              <li><Link to="/">SPEAKERS</Link></li>
               <li>TALKS</li>
-              <li>TEAM</li>
+              <li><Link to="/team">TEAM</Link></li>
               <li>CONTACT US</li>
             </ul>
           </div>
