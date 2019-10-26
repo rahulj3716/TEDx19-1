@@ -56,7 +56,7 @@ export default class TeamIndex extends Component {
                         <Member className="member-list-child" name="RAGHUVANSH RAWAT" image={Image12} position="Head of Operationa" quote="You didn't come this far to only come this far."/>
                         <Member className="member-list-child" name="AKASH RAJ" image={Image2} position="Head of PR and Marketing" quote="Somebody toucha my Spaghet"/>
                         <Member className="member-list-child" name="SUDHIR BALAKRISHNAN" image={Image15} position="Senior Manager" quote="I was once thrown to the wolves. Now I lead the pack."/>
-                        <Member className="member-list-child" name="SAI VARUN MULA"  image={Image1} position="Executive Admin-Relations" quote=""/>
+                        {/* <Member className="member-list-child" name="SAI VARUN MULA"  image={Image1} position="Executive Admin-Relations" quote=""/> */}
                         <Member className="member-list-child" name="UTKARSH MATHUR" image={Image16} position="Manager" quote="Whatever is the problem, see it off with a great smile."/>
                         <Member className="member-list-child" name="PARTH SINGH PARIHAR" image={Image11}  position="Manager" quote="If you don't have bad days you'd eventually get bored of the good ones."/>
                         <Member className="member-list-child" name="ROCHISHA AGARWAL" image={Image13} position="Manager" quote="Everything you go through grows you."/>
