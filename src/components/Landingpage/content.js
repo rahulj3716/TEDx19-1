@@ -2,6 +2,9 @@ import Image1 from "./src/images/JosephRadhik.jpg";
 import Image2 from "./src/images/ManishBehl.jpeg";
 import Image3 from "./src/images/PrashantDhawan.jpg";
 import Image4 from "./src/images/AlexMathew.jpeg";
+import Image6 from "./src/images/NarpathRaman.jpg";
+import Image5 from "./src/images/navneetNair.jfif";
+
 import Image from "./src/images/download.jpg";
 
 export const speakers = [
@@ -43,20 +46,20 @@ export const speakers = [
   },
   {
     id: 5,
-    firstName: "Bill",
-    lastName: "gates",
-    img: Image,
-    designation: "( Founder, Microsoft )",
+    firstName: "Navneet",
+    lastName: "Nair",
+    img: Image5,
+    designation: "(Director of Product Design, PhonePe)",
     about:
-      "Since the beginning of time, humans have been surrounded by constraints and challenged with the task to overcome them. A huge part of our evolution revolves around these constraints. Although culture and tradition have provided us with a basis for living standards, they have held us back in many ways. Going against the tradition is not to be viewed as a step in the wrong direction, but rather as an attempt at a new, unexplored adventure "
+    "Navneet Nair, Director of Product Design at PhonePe, has been a hands-on practitioner of design and user-focused creative arts. His expertise spans interaction design, user experience, user research, product management, advertising, design thinking & design management. He has worked in both individual contributor roles and in leadership positions at startups and established companies like Yahoo & Google."
   },
   {
     id: 6,
-    firstName: "Bill",
-    lastName: "gates",
-    img: Image,
-    designation: "( Founder, Microsoft )",
+    firstName: "Narpath ",
+    lastName: "Raman",
+    img: Image6,
+    designation: "(Mentalist)",
     about:
-      "Since the beginning of time, humans have been surrounded by constraints and challenged with the task to overcome them. A huge part of our evolution revolves around these constraints. Although culture and tradition have provided us with a basis for living standards, they have held us back in many ways. Going against the tradition is not to be viewed as a step in the wrong direction, but rather as an attempt at a new, unexplored adventure "
+      "Narpath Raman India's leading Mentalist/Mind Reader has entertained many prestigious clients and appeared in numerous stage shows, amazing some of India's top celebrities through his Psychological illusion. Mentalism is a performing art in which its practitioners, known as mentalists, appear to demonstrate highly developed mental or intuitive abilities. He has performed for various multinational companies including Mckinsey, E&Y, Microsoft, Gulf Oil, Cisco, Tafe and many more. "
   }
 ];

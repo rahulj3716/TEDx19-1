@@ -71,9 +71,9 @@ export default class SpeakerIndex extends Component {
     return (
       <div className="landing-speaker-parent">
         <div
-          className="landing-speaker-parent-background"
+          className="landing-speaker-parent-background" 
           style={{
-            backgroundImage: `url(${speakers[5].img})`
+            backgroundImage: `url(${Image})`
           }}
         ></div>
         <div className="landing-speaker-parent-header">
