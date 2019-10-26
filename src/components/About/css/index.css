@@ -87,7 +87,7 @@
 }
 .about-section1-content-text h1 {
   align-self: flex-start;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   font-size: 4.5rem;
   color: #ffffff;
   font-family: HelveticaNeue-Bold-Extd;

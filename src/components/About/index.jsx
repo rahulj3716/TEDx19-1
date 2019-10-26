@@ -75,7 +75,7 @@ export default class AboutIndex extends Component {
             <div className="about-section1-content-image"></div>
             <div className="about-section1-content-text">
               <h1>
-                What is <span>TEDx</span>?
+                What is <span>TEDxIITRoorkee</span>?
               </h1>
               <p>
                 Team TEDxIITRoorkee has been conducting TED Talks in the campus
