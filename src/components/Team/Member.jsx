@@ -14,15 +14,16 @@ export default class Member extends Component {
     		<div>
     			<div className="member-parent">
     				<div className="member-image-container">
-    					<div className="red-border"><div className="member-image"></div></div>
+    					<div className="red-border"><div className="member-image" style={{
+                          backgroundImage: `url(${this.props.image})`}}></div></div>
     				</div>
     				<div className="member-info">
     					<h3 className="member-info-name">{this.props.name}</h3>
     					<p className="member-info-position">{this.props.position}</p>
-    					<p className="member-info-quote"><span>&#8220;</span>Time isn't the main thing, its the only thing<span>&#8221;</span></p>   
+    					<p className="member-info-quote"><span>&#8220;</span>{this.props.quote}<span>&#8221;</span></p>   
     				</div>
     			</div>
     		</div>
-    	)
+    	) 
     }
 }
