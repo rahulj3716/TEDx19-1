@@ -26,7 +26,9 @@ export default class Navbar extends Component {
             isHidden: !this.state.isHidden
         });
     }
+   
     componentDidMount() {
+        console.log("hello")
         console.log(this.state.navdisplay,"navdisplay")
         if (window.innerWidth >= 768) {
             this.setState(
@@ -35,6 +37,7 @@ export default class Navbar extends Component {
                 }
             )
         }
+
         // let doc = document.getElementById("navbar")
 
         // window.addEventListener("scroll", function () {
@@ -48,6 +51,8 @@ export default class Navbar extends Component {
 
         // }, false)
     }
+
+  
     render() {
         return (
             <div id="navbar" className="ecell-navbar-parent">
@@ -66,8 +71,9 @@ export default class Navbar extends Component {
                     </div>
                     {this.state.navdisplay ?
                         <div className={this.state.displaynavbar ? 'ecell-mobile-navbar-active' : 'ecell-mobile-navbar-inactive'}>
-                            <Link to="/" className="">
-                                <div className={this.state.displaynavbar ? "navbar-show ecell-mobile-menuback" : "navbar-hide ecell-mobile-menuback"}>
+                            <Link to="/" className={this.state.activenav === "" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("")}>
+                                <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
                                     Home
                                 </div>
                             </Link>
@@ -76,7 +82,8 @@ export default class Navbar extends Component {
                                    Talks
                                 </div>
                             </Link> */}
-                            <Link to="/about" className="">
+                            <Link to="/about" className={this.state.activenav === "about" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("about")}>
                                 <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
                                     About
                                 </div>
@@ -86,7 +93,8 @@ export default class Navbar extends Component {
                                     Partner   
                                 </div>
                             </Link> */}
-                            <Link to="/team" className="">
+                            <Link to="/team" className={this.state.activenav === "team" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("team")}>
                                 <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
                                     Team
                                 </div>
@@ -95,12 +103,45 @@ export default class Navbar extends Component {
                         </div>
                         : null }
 
+
+
+                        <div className={this.state.displaynavbar ? 'ecell-mobile-navbar-active' : 'ecell-mobile-navbar-inactive'}>
+                            <Link to="/" className={this.state.activenav === "" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("")}>
+                                <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
+                                    Home
+                                </div>
+                            </Link>
+                            {/* <Link to="/talks" className="">
+                                <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
+                                   Talks
+                                </div>
+                            </Link> */}
+                            <Link to="/about" className={this.state.activenav === "about" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("about")}>
+                                <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
+                                    About
+                                </div>
+                            </Link>
+                            {/* <Link to="/partner" className="">
+                                <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
+                                    Partner   
+                                </div>
+                            </Link> */}
+                            <Link to="/team" className={this.state.activenav === "team" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("team")}>
+                                <div className={this.state.displaynavbar ? "navbar-show" : "navbar-hide"}>
+                                    Team
+                                </div>
+                            </Link>
+
+                        </div>
                     <div className="ecell-navbar-int-ctos">
                         <ul id="ecell-navbar-options-hide">
                             <li className="ecell-navbar-ctos-dropdown">
 
-                                <Link to="/" className={this.state.activenav === "aboutus" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
-                                    onClick={() => this.setActive("aboutus")}>
+                                <Link to="/" className={this.state.activenav === "" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("")}>
                                     Home
                                 </Link>
                                
@@ -113,8 +154,8 @@ export default class Navbar extends Component {
                               
                             </li> */}
                             <li className="ecell-navbar-ctos-dropdown">
-                                <Link to="/about" className={this.state.activenav === "getinvolved" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
-                                    onClick={() => this.setActive("getinvolved")}>
+                                <Link to="/about" className={this.state.activenav === "about" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("about")}>
                                     About 
                                 </Link>
                                
@@ -127,8 +168,8 @@ export default class Navbar extends Component {
                               
                             </li> */}
                             <li className="ecell-navbar-ctos-dropdown">
-                                <Link to="/team" className={this.state.activenav === "community" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
-                                    onClick={() => this.setActive("community")}>
+                                <Link to="/team" className={this.state.activenav === "team" ? "ecell-ctos-navbar-option linkactive" : "ecell-ctos-navbar-option"}
+                                    onClick={() => this.setActive("team")}>
                                     Team
                                 </Link>
                                

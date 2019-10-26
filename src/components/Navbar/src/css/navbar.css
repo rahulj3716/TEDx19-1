@@ -1,5 +1,16 @@
 .ecell-ctos-navbar-option .linkactive{
     opacity: 1;
+    font-family: HelveticaNeue-Bold;
+    
+    
+}
+.ecell-mobile-navbar-inactive{
+    display: none;
+}
+.ecell-navbar-ctos-dropdown .linkactive{
+    opacity: 1;
+    font-family: HelveticaNeue-Bold;
+    
 }
 .ecell-navbar-parent {
     display: flex;
@@ -230,7 +241,7 @@
     .new-navbar-i >span{
         user-select:none;
         transition:all 0.6s;
-        border-bottom:2px solid #fff; 
+        border-bottom:2px solid red; 
         display:block;
         width:23px;
         height:5px;
@@ -302,6 +313,16 @@
     .navbar-show{
         visibility: visible;
         transition: visibility 0.7s;
+    }
+    .linkactive{
+        opacity: 1;
+        font-family: HelveticaNeue-Bold;
+        background: green;
+        
+        
+    }
+    .ecell-mobile-navbar-inactive{
+        display: block;
     }
     .navbar-hide{
         visibility: hidden;
