@@ -113,7 +113,12 @@
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1700px) {
+  .about-section1-content-text h1 {
+    font-size: 3rem;
+  }
 
+}
 @media screen and (max-width: 1400px) {
   #about-page-navbar {
     padding: 0 8.5rem;
